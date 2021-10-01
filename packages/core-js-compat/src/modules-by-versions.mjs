@@ -116,5 +116,9 @@ export default {
     'esnext.array.with-reversed',
     'esnext.array.with-sorted',
     'esnext.array.with-spliced',
+    'esnext.typed-array.with-at',
+    'esnext.typed-array.with-reversed',
+    'esnext.typed-array.with-sorted',
+    'esnext.typed-array.with-spliced',
   ],
 };
