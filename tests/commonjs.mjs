@@ -541,6 +541,7 @@ for (PATH of ['core-js-pure', 'core-js']) {
   }
 
   for (const NS of ['stable', 'features']) {
+    ok(typeof load(NS, 'dom-exception') == 'function');
     ok(typeof load(NS, 'dom-collections').iterator == 'function');
     ok(typeof load(NS, 'dom-collections/for-each') == 'function');
     ok(typeof load(NS, 'dom-collections/iterator') == 'function');
@@ -785,6 +786,7 @@ for (PATH of ['core-js-pure', 'core-js']) {
   ok(load('stage/pre'));
   ok(load('stage'));
 
+  ok(load('web/dom-exception'));
   ok(load('web/dom-collections'));
   ok(load('web/immediate'));
   ok(load('web/queue-microtask'));
