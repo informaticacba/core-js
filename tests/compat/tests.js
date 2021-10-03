@@ -1278,6 +1278,12 @@ GLOBAL.tests = {
   'esnext.composite-symbol': function () {
     return compositeSymbol;
   },
+  'esnext.function.is-callable': function () {
+    return Function.isCallable;
+  },
+  'esnext.function.is-constructor': function () {
+    return Function.isConstructor;
+  },
   'esnext.iterator.constructor': function () {
     try {
       Iterator({});

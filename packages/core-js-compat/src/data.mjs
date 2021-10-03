@@ -1493,6 +1493,10 @@ export const data = {
   },
   'esnext.composite-symbol': {
   },
+  'esnext.function.is-callable': {
+  },
+  'esnext.function.is-constructor': {
+  },
   // TODO: Remove from `core-js@4`
   'esnext.global-this': null,
   'esnext.iterator.constructor': {
