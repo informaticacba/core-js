@@ -112,6 +112,7 @@ export default {
     'esnext.typed-array.from-async',
   ],
   3.19: [
+    'es.error.to-string',
     'web.dom-exception',
   ],
 };

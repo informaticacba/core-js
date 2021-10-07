@@ -119,6 +119,8 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok('map' in load(NS, 'array/virtual'));
     ok('from' in load(NS, 'array'));
     ok(load(NS, 'array/splice')([1, 2, 3], 1, 2)[0] === 2);
+    ok(typeof load(NS, 'error/to-string') === 'function');
+    ok(load(NS, 'error'));
     ok(load(NS, 'math/acosh')(1) === 0);
     ok(Object.is(load(NS, 'math/asinh')(-0), -0));
     ok(load(NS, 'math/atanh')(1) === Infinity);
@@ -254,7 +256,6 @@ for (PATH of ['core-js-pure', 'core-js']) {
     ok(load(NS, 'json').stringify([1]) === '[1]');
     ok(load(NS, 'json/stringify')([1]) === '[1]');
     ok(load(NS, 'json/to-string-tag') === 'JSON');
-
     ok(typeof load(NS, '/date/now')(new Date()) === 'number');
     const date = new Date();
     ok(load(NS, 'date/get-year')(date) === date.getFullYear() - 1900);
