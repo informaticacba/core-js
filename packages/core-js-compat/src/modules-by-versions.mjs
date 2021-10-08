@@ -113,6 +113,6 @@ export default {
   ],
   3.19: [
     'es.error.to-string',
-    'web.dom-exception',
+    'web.dom-exception.constructor',
   ],
 };
