@@ -1779,6 +1779,12 @@ export const data = {
     deno: '1.7',
     firefox: '37',
   },
+  'web.dom-exception.to-string-tag': {
+    chrome: '49',
+    deno: '1.7',
+    firefox: '51',
+    safari: '11.1',
+  },
   'web.immediate': {
     ie: '10',
     node: '0.9.1',
