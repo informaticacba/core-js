@@ -114,5 +114,6 @@ export default {
   3.19: [
     'es.error.to-string',
     'web.dom-exception.constructor',
+    'web.dom-exception.stack',
   ],
 };

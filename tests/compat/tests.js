@@ -1595,6 +1595,9 @@ GLOBAL.tests = {
   'web.dom-exception.constructor': function () {
     return typeof DOMException === 'function';
   },
+  'web.dom-exception.stack': function () {
+    return !('stack' in Error('1')) || 'stack' in new DOMException();
+  },
   'web.immediate': function () {
     return setImmediate && clearImmediate;
   },
