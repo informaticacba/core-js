@@ -112,7 +112,7 @@ export default {
     'esnext.typed-array.from-async',
   ],
   3.19: [
-    'esnext.aggregate-error.cause',
     'esnext.error.cause',
+    'esnext.aggregate-error.cause',
   ],
 };
