@@ -595,6 +595,8 @@ for (PATH of ['core-js-pure', 'core-js']) {
     load(NS, 'bigint');
     ok(typeof load(NS, 'composite-key')({}, 1, {}) === 'object');
     ok(typeof load(NS, 'composite-symbol')({}, 1, {}) === 'symbol');
+    ok(load(NS, 'error/constructor').Error(1, { cause: 7 }).cause === 7);
+    ok(load(NS, 'error').Error(1, { cause: 7 }).cause === 7);
     ok(typeof load(NS, 'iterator') == 'function');
     ok(typeof load(NS, 'iterator/as-indexed-pairs') == 'function');
     ok(typeof load(NS, 'iterator/drop') == 'function');
@@ -750,6 +752,7 @@ for (PATH of ['core-js-pure', 'core-js']) {
   load('proposals/collection-of-from');
   load('proposals/decorators');
   load('proposals/efficient-64-bit-arithmetic');
+  load('proposals/error-cause');
   load('proposals/global-this');
   load('proposals/iterator-helpers');
   load('proposals/keys-composition');
