@@ -111,4 +111,7 @@ export default {
     'esnext.array.from-async',
     'esnext.typed-array.from-async',
   ],
+  3.19: [
+    'es.number.to-exponential',
+  ],
 };
