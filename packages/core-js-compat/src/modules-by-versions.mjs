@@ -111,7 +111,7 @@ export default {
     'esnext.array.from-async',
     'esnext.typed-array.from-async',
   ],
-  3.19: [
+  '3.20': [
     'esnext.array.with-at',
     'esnext.array.with-reversed',
     'esnext.array.with-sorted',
