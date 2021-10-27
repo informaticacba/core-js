@@ -1,3 +1,4 @@
+require('../proposals/array-grouping');
 require('../proposals/array-is-template-object');
 require('../proposals/decorators');
 require('../proposals/iterator-helpers');
